@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        
+        <div id="app"></div>
+
+        <input  class="js_add_task" placeholder = "ADD TASK"> 
+
+        <input class="add_date"  id="date" placeholder = " ADD DATE">
+
+        <button onclick="addtodo();" class="add_button">  ADD</button>
+          
+        <button class="delete_button"> DELETE</button>
+
+
+
+
+
+
+        
+
+        
+
+    </main>
+	<script src="index.js">
+
+  
+ let list= [1,1,3];
+ let todolist = [];
+ const task = document.querySelector(".js_add_task");
+ const taskValue =task.value;
+ 
+
+ function addtodo() {
+
+  todolist.push(taskValue)
+
+  task.value = '';
+  console.log( todolist);
+
+
+
+
+  /*for( i=0,i<todolist.lenghth,i++){
+    todolist.push(taskValue)
+  }*/
+ 
+  
+
+ 
+ }
+ console.log(list);
+ console.log( todolist);
+ 
+
+  
+  
+  
+  
+  </script>
+  </body>
+</html>
+
+
+
